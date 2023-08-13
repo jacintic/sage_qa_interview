@@ -69,4 +69,5 @@ Ideally the test cases described in the test plan, would be able to be exported 
 First, have your branch ready. Take the Dev branch, and make a branch off it. The IDE will take off it, all you have to do is go to the Dev branch and create a new branch based from the Dev branch.  
 Assuming you have your test suit installed and integrated in the project, all you have to do is write the tests and execute them. After all tests have been processed accordingly. 
 The best practices would suggest that you perform a git rebase from the Dev branch in order to keep your branch up to date and easier to process for the merge. After that you push the changes, and create a pull request. With the Visual Studio Community IDE, that's as simple as this:
-Git > Github > Create New Pull Request
+Git > Github > Create New Pull Request. 
+Assuming there are no merge conflicts to solve you just add the comment and the pull request is created.
