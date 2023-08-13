@@ -89,13 +89,13 @@ Every monday there will be a meeting where the process of the project will be mo
          1. response with a 201 code for successfully created
 7. Register with all required (correct) fields, non required fields too.
    1.  It should
-      1. Front End part
-         1. load the Login page
-         2. display a highlighted UI block element with the title "Register process complete!
-         3. the UI element should be clearly standing out from the login page visually
-         4. the UI element should provide an option to close it
-      2. API should
-         1. response with a 201 code for successfully created
+       1. Front End part
+          1. load the Login page
+          1. display a highlighted UI block element with the title "Register process complete!
+          1. the UI element should be clearly standing out from the login page visually
+          2. the UI element should provide an option to close it
+       2. API should
+          1. response with a 201 code for successfully created
 
 # Login, Test Cases  
 0. Basic Requirements
