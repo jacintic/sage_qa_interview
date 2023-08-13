@@ -48,7 +48,7 @@ I would format the Defect ticket like this:
 **sprint**: in the specific current sprint of this project
 **asignees**: Dev team lead, API/Back End lead (they'll assign it to the proper devs in their team). Or if there's a specific known dev that handled the project (or two if we're talking about F.E. and API solutions at the same time) then set them both as assignees
 
-**acceptance criteria**: the USER NAME input should no longer be able to accept in more than 10 characters, front end and API validations and responses must be applied.
+**acceptance criteria**: the USER NAME input should no longer be able to accept in more than 10 characters, front end and API solutions must be provided in order to avoid User Name to exceed 10 characters..
   
   
 ### 4. What’s the defect life cycle? Differences between bug and defect?
