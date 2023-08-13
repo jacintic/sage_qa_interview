@@ -14,8 +14,8 @@ Automated Testing Solutions will be decided by the Team Assigned to this project
   
 ## Resources required  
 For this task, there will be 1 member from the Product Owners team that will provide the project requirements and will follow the process of this project. 2 QA members in charge of Testing and the Tech Lead, and a Senior Dev from the Dev team.  
-The journey will start with a meeting between all of the Project Members. There they will decide the Project's duration, the resources required (for example, more Dev members will be required to provide the App being tested), and the Testing Software solutions to employ. For example, they might want to use Cypress for End to End Testing.  
-Every monday there will be a meeting where the process of the project will be monitored and handled accordingly.
+The journey will start with a meeting between all of the Project Members. There they will decide the Project's duration, the resources required (for example, more Dev members will be required to provide the App being tested, fixing bugs or defects, etc.), and the Testing Software solutions to employ. For example, they might want to use Cypress for End to End Testing.  
+EveryThere'll be a weekly standup, in it all members that are enrolled in this project will participate, the current progress and the planned roadmap be monitored and managed by stakeholders.
   
   
 # Register, Test Cases  
@@ -24,7 +24,7 @@ Every monday there will be a meeting where the process of the project will be mo
       1. have Front End solution do the following
          1. Each field that is required marked with an asterisk
          2. A clear message near the Submit button explaining that the (*) fields are required
-         3. All fields with validation must have a toggable "validation requirements" small button underneath the field clearly explaining the validation rules that apply to the field
+         3. All fields with validation must have a toggle "validation requirements" small button underneath the field clearly explaining the validation rules that apply to the field
       2. API/Back End should have rules for required and validation and proper response messages 
 1. Register with Empty Data
    1. It should 
@@ -36,7 +36,17 @@ Every monday there will be a meeting where the process of the project will be mo
       2. API should 
          1. return a status on the 400 range
          2. return an error message saying all fields are empty
-2. Register with all required (correct) fields except one
+2. Register with all required fields filled in with space characters
+  1. It should 
+      1. have Front End solution do the following
+         1. avoid submitting the te form
+         2. report mandatory fields with 
+            1. UI field highlighting
+            2. Error message explaining that the field is required
+      2. API should 
+         1. return a status on the 400 range
+         2. return an error message saying all fields are empty
+3. Register with all required (correct) fields except one
    1. It should
       1. Front End part
          1. avoid submitting the form
@@ -46,7 +56,7 @@ Every monday there will be a meeting where the process of the project will be mo
       2. API should 
          1. return a status on the 400 range
          2. return an error message naming the required field
-3. Register with the required fields but with validation errors **REPEAT FOR EACH FIELD WITH VALIDATION**
+4. Register with the required fields but with validation errors **REPEAT FOR EACH FIELD WITH VALIDATION**
    1. It should
       1. Front End part
          1. avoid submitting the form
@@ -56,7 +66,7 @@ Every monday there will be a meeting where the process of the project will be mo
       2. API should
          1. return a status on the 400 range
          2. return an error message naming the required, the validation rules it failed and why it failed
-4. Register with all required (correct) fields except 3 of them with validation errors
+5. Register with all required (correct) fields except 3 of them with validation errors
    1. It should
       1. Front End part
          1. avoid submitting the form
@@ -67,7 +77,7 @@ Every monday there will be a meeting where the process of the project will be mo
          1. return a status on the 400 range
          2. return an error message naming the required, the validation rules it failed and why it failed
          3. ensure that all fields that failed are listed with their proper explanation of the error
-5. Register with all required (correct) fields, but a few validation error in a non required field
+6. Register with all required (correct) fields, but a few validation error in a non required field
    1. It should
       1. Front End part
          1. avoid submitting the form
@@ -78,7 +88,7 @@ Every monday there will be a meeting where the process of the project will be mo
          1. return a status on the 400 range
          2. return an error message naming the required, the validation rules it failed and why it failed
          3. ensure that all fields that failed are listed with their proper explanation of the error
-6. Register with all required (correct) fields, non required fields empty
+7. Register with all required (correct) fields, non required fields empty
    1. It should
       1. Front End part
          1. load the Login page
@@ -87,13 +97,13 @@ Every monday there will be a meeting where the process of the project will be mo
          4. the UI element should provide an option to close it
       2. API should
          1. response with a 201 code for successfully created
-7. Register with all required (correct) fields, non required fields too.
+8. Register with all required (correct) fields, non required fields too.
    1.  It should
        1. Front End part
           1. load the Login page
-          1. display a highlighted UI block element with the title "Register process complete!
-          1. the UI element should be clearly standing out from the login page visually
-          2. the UI element should provide an option to close it
+          2. display a highlighted UI block element with the title "Register process complete!
+          3. the UI element should be clearly standing out from the login page visually
+          4. the UI element should provide an option to close it
        2. API should
           1. response with a 201 code for successfully created
 

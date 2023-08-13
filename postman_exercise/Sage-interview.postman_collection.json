@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "310f70f9-ef32-4573-8827-3795ba9b70cf",
+		"name": "Sage-interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12311009"
+	},
+	"item": [
+		{
+			"name": "BradPit",
+			"item": [
+				{
+					"name": "Get Employees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "ab2c02d851b4e8d9a22b47f97e561b99d605dbe85d5d27284d2a79451d39b0ffb10d99bf3c90c134",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://macpre2507.cakehr.biz/api/employees",
+							"protocol": "https",
+							"host": [
+								"macpre2507",
+								"cakehr",
+								"biz"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "ab2c02d851b4e8d9a22b47f97e561b99d605dbe85d5d27284d2a79451d39b0ffb10d99bf3c90c134",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://macpre2507.cakehr.biz/api/employees/1408709",
+							"protocol": "https",
+							"host": [
+								"macpre2507",
+								"cakehr",
+								"biz"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1408709"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brad Pitt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "ab2c02d851b4e8d9a22b47f97e561b99d605dbe85d5d27284d2a79451d39b0ffb10d99bf3c90c134",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"brad-pitt@sage.com\",\r\n    \"first_name\": \"Brad\",\r\n    \"last_name\": \"Pitt\",\r\n    \"work_start_date\": \"2023-08-07\",\r\n    \"send_email\": true,\r\n    \"date_of_birth\": \"1992-08-17\",\r\n    \"gender\": \"Male\",\r\n    \"marital_status\": \"Single\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://macpre2507.cakehr.biz/api/employees",
+							"protocol": "https",
+							"host": [
+								"macpre2507",
+								"cakehr",
+								"biz"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Brad Pitt's profile",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "ab2c02d851b4e8d9a22b47f97e561b99d605dbe85d5d27284d2a79451d39b0ffb10d99bf3c90c134",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1408709,\r\n        \"marital_status\": \"Single\",\r\n        \"work_start_date\" : \"2023-08-04\",\r\n        \"date_of_birth\": \"‘1962-01-20’\"\r\n\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://macpre2507.cakehr.biz/api/employees/1408709",
+							"protocol": "https",
+							"host": [
+								"macpre2507",
+								"cakehr",
+								"biz"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1408709"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terminate Brad Pitt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "ab2c02d851b4e8d9a22b47f97e561b99d605dbe85d5d27284d2a79451d39b0ffb10d99bf3c90c134",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\" : \"2023-08-10\",\r\n    \"termination_reason_id\": 2190880\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://macpre2507.cakehr.biz/api/employees/1408709/terminations",
+							"protocol": "https",
+							"host": [
+								"macpre2507",
+								"cakehr",
+								"biz"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1408709",
+								"terminations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

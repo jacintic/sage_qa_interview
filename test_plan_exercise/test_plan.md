@@ -40,6 +40,7 @@ In each case, Test Execution should be reported to the Test Plan, the Test Plan 
 ### 3. In the process of USER NAME validation, you discover it accepts more than 10 chars. What kind of information would you include in the defect report?  
 I would format the Defect ticket like this:  
 **url**: https://www.holidaysyomiami.com/register  
+**test case/ project**: a link to a Jira Test Case within the Test Plan or a proper link to a Jira ticket that is related to the register functionality 
 **environment**: Production  
 **issue**: the USER NAME field accepts more than 10 characters  
 **steps to reproduce**: it will detail the steps required in order to reproduce the defect  
@@ -69,5 +70,4 @@ Ideally the test cases described in the test plan, would be able to be exported 
 First, have your branch ready. Take the Dev branch, and make a branch off it. The IDE will take off it, all you have to do is go to the Dev branch and create a new branch based from the Dev branch.  
 Assuming you have your test suit installed and integrated in the project, all you have to do is write the tests and execute them. After all tests have been processed accordingly. 
 The best practices would suggest that you perform a git rebase from the Dev branch in order to keep your branch up to date and easier to process for the merge that the project manager would have to do to integrate the pull request if there are any conflicts. After that you push the changes, and create a pull request. With the Visual Studio Community IDE, that's as simple as this:
-Git > Github > Create New Pull Request. 
-The Github repo will be opened in a browser and there you can comment on the PR and send it.
+After pushing the changes in VS Community IDE, a message will appear above the Git tab on the side tab,  with the option `Create a Pull Request`. After clicking it, a title and a description will be provided. After that the type of PR will be detailed, in this case a feature or a test. After creating the Pull Request, a link will appear with a link to the Github Repository and specific pull request. 
