@@ -87,7 +87,7 @@ Every monday there will be a meeting where the process of the project will be mo
          4. the UI element should provide an option to close it
       2. API should
          1. response with a 201 code for successfully created
-7.  Register with all required (correct) fields, non required fields too.
+7. Register with all required (correct) fields, non required fields too.
    1.  It should
       1. Front End part
          1. load the Login page
