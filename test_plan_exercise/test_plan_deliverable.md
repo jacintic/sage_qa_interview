@@ -58,11 +58,11 @@ Every monday there will be a meeting where the process of the project will be mo
       2. return an error message naming the required, the validation rules it failed and why it failed
 4. Register with all required (correct) fields except 3 of them with validation errors
    1. It should
-     1. Front End part
-       1. avoid submitting the form
-       2. report the validation error fields with
-         1. UI field highlighting
-         2. Error message explaining the validation rules that apply and why they failed
+      1. Front End part
+         1. avoid submitting the form
+         2. report the validation error fields with
+            1. UI field highlighting
+            2. Error message explaining the validation rules that apply and why they failed
    2. API should
       1. return a status on the 400 range
       2. return an error message naming the required, the validation rules it failed and why it failed
@@ -70,10 +70,10 @@ Every monday there will be a meeting where the process of the project will be mo
 5. Register with all required (correct) fields, but a few validation error in a non required field
    1. It should
      1. Front End part
-       1. avoid submitting the form
-       2. report the validation error field with
-         1. UI field highlighting
-         2. Error message explaining the validation rules that apply and why they failed
+        1. avoid submitting the form
+          1. report the validation error field with
+             1. UI field highlighting
+             1. Error message explaining the validation rules that apply and why they failed
    2. API should
       1. return a status on the 400 range
       2. return an error message naming the required, the validation rules it failed and why it failed
