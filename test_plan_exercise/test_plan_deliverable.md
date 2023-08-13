@@ -69,15 +69,15 @@ Every monday there will be a meeting where the process of the project will be mo
       3. ensure that all fields that failed are listed with their proper explanation of the error
 5. Register with all required (correct) fields, but a few validation error in a non required field
    1. It should
-     1. Front End part
-        1. avoid submitting the form
-          1. report the validation error field with
-             1. UI field highlighting
-             1. Error message explaining the validation rules that apply and why they failed
-   2. API should
-      1. return a status on the 400 range
-      2. return an error message naming the required, the validation rules it failed and why it failed
-      3. ensure that all fields that failed are listed with their proper explanation of the error
+      1. Front End part
+         1. avoid submitting the form
+         2. report the validation error field with
+            1. UI field highlighting
+            2. Error message explaining the validation rules that apply and why they failed
+      2. API should
+         1. return a status on the 400 range
+         2. return an error message naming the required, the validation rules it failed and why it failed
+         3. ensure that all fields that failed are listed with their proper explanation of the error
 6. Register with all required (correct) fields, non required fields empty
    1. It should
       1. Front End part
@@ -88,14 +88,14 @@ Every monday there will be a meeting where the process of the project will be mo
       2. API should
          1. response with a 201 code for successfully created
 7.  Register with all required (correct) fields, non required fields too.
-    1. It should
+   1. It should
       1. Front End part
-        1. load the Login page
-        2. display a highlighted UI block element with the title "Register process complete!
-        3. the UI element should be clearly standing out from the login page visually
-        4. the UI element should provide an option to close it
+         1. load the Login page
+         1. display a highlighted UI block element with the title "Register process complete!
+         1. the UI element should be clearly standing out from the login page visually
+         2. the UI element should provide an option to close it
       2. API should
-        1. response with a 201 code for successfully created
+         1. response with a 201 code for successfully created
 
 # Login, Test Cases  
 0. Basic Requirements
