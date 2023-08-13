@@ -68,6 +68,6 @@ Ideally the test cases described in the test plan, would be able to be exported 
 **New Test Cases in a Pull Request, in Github**:  
 First, have your branch ready. Take the Dev branch, and make a branch off it. The IDE will take off it, all you have to do is go to the Dev branch and create a new branch based from the Dev branch.  
 Assuming you have your test suit installed and integrated in the project, all you have to do is write the tests and execute them. After all tests have been processed accordingly. 
-The best practices would suggest that you perform a git rebase from the Dev branch in order to keep your branch up to date and easier to process for the merge. After that you push the changes, and create a pull request. With the Visual Studio Community IDE, that's as simple as this:
+The best practices would suggest that you perform a git rebase from the Dev branch in order to keep your branch up to date and easier to process for the merge that the project manager would have to do to integrate the pull request if there are any conflicts. After that you push the changes, and create a pull request. With the Visual Studio Community IDE, that's as simple as this:
 Git > Github > Create New Pull Request. 
-Assuming there are no merge conflicts to solve you just add the comment and the pull request is created.
+The Github repo will be opened in a browser and there you can comment on the PR and send it.
