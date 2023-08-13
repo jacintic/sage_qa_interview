@@ -58,7 +58,7 @@ In this case an image will explain in very well what's the life cycle of a defec
 It can be **New** if it is just spotted and reported. **Assigned**, when it is assigned to a Dev to work on it to solve it. **Open** if the Dev is working on it already. **Duplicate** if it is found as already reported before. **Fixed** when the Dev delivers the solution. **Pending retests** when it is accepted for testing stage. **Retest** when it is tested. After the testing it will be either **Reopened** and reassigned to a Dev, or **Verified** by another dev and/or QA. And finally when it is solved, it will be **Closed**.  
   
 **Difference between bug and defect**:  
-A bug is found in the **Development process**, which means, before it was finished and delivered, up and running. A defect is found after this.  
+A bug is found in the **Development process**, which means, before it was finished and delivered, up and running. A defect is found when the project is in **Production**, which means it is up and running and the end client, in this case the user that wants to register into https://www.holydaystomiami.com finds an error in the register process.  
   
 
 ### 5. Imagine that now you want to automate some test cases of your Test Plan. Could you describe the steps you have to do to have your repository ready and what’s the workflow you’d follow to open a pull request with the new test cases in GitHub?
